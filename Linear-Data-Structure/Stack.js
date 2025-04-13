@@ -1,8 +1,8 @@
 // Implementaion using Array
 
 class Stack {
-  constructor() {
-    this.data = new Array(5);
+  constructor(length = 5) {
+    this.data = new Array(length);
     this.topElement = 0;
   }
 
@@ -246,3 +246,5 @@ console.log("----------------------------");
 
 console.log("size = " + stack.size());
 console.log("----------------------------");
+
+module.exports = Stack;
